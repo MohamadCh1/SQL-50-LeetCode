@@ -9,3 +9,4 @@ ROUND(
     ) AS confirmation_rate
 FROM Signups as S left join Confirmations as C on C.user_id=S.user_id
 GROUP BY S.user_id
+ORDER BY S.user_id
